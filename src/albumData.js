@@ -52,6 +52,18 @@ export const PAGES = [
   },
   {
     left: {
+      layout: "full",
+      src: "/anh 8.jpg",
+      note: "Ba Vì - giờ nhóm này chia hành lý bớt rồi hẹ hẹ",
+    },
+    right: {
+      layout: "full",
+      src: "/anh 9.jpg",
+      note: "Mấy đứa này nối khố nhau mà lớn",
+    },
+  },
+  {
+    left: {
       layout: "mood",
       quote:
         '"Cảm ơn mọi người đã xem đến đây! Bên cạnh mình có lời mời vào ngày mình tốt nghiệp mong mọi người có thể dành chút thời gian đến chung vui với mình ❤️"',
@@ -69,7 +81,8 @@ export const LABELS = [
   "Bìa sách",
   "Trang mở đầu",
   "Trang ảnh 2 - 3",
-  "",
-  "",
+  "Trang ảnh 4 - 5",
+  "Trang ảnh 6 - 7",
+  "Trang ảnh 8 - 9",
   "",
 ];
