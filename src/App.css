@@ -43,8 +43,8 @@ body {
   align-items: center;
   gap: 22px;
   padding: 18px 0 24px;
-  height: 100vh;
-  justify-content: center;
+  min-height: 100vh;
+  justify-content: flex-start;
 }
 
 .book-title-top {
@@ -60,7 +60,7 @@ body {
 
 .book {
   position: relative;
-  width: 980px;
+  width: min(980px, 94vw);
   height: auto;
   aspect-ratio: 980 / 640;
   transform-style: preserve-3d;
@@ -676,13 +676,17 @@ body {
 
 @media (max-width: 960px) {
   .book {
-    width: min(94vw, calc((100vh - 250px) * 1.53125));
+    width: min(96vw, calc((100dvh - 260px) * 1.53125));
+    max-width: 96vw;
     height: auto;
   }
 
   .scene {
-    gap: 14px;
-    padding: 10px 0 14px;
+    min-height: 100dvh;
+    height: auto;
+    justify-content: flex-start;
+    gap: 12px;
+    padding: 10px 0 16px;
   }
 
   .controls {
@@ -704,4 +708,35 @@ body {
     font-size: 14px;
   }
 
+}
+
+@media (max-width: 640px) {
+  .book-title-top {
+    font-size: 20px;
+  }
+
+  .book {
+    width: min(97vw, calc((100dvh - 250px) * 1.53125));
+  }
+
+  .controls {
+    width: 94vw;
+    justify-content: space-between;
+  }
+
+  .btn {
+    min-height: 42px;
+    padding: 9px 16px;
+    font-size: 13px;
+  }
+
+  .guest-note-box {
+    width: 92vw;
+    max-height: min(230px, 34dvh);
+  }
+
+  .guest-note-form input,
+  .guest-note-form textarea {
+    font-size: 14px;
+  }
 }
