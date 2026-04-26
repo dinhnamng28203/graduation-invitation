@@ -46,7 +46,10 @@ function renderCoverFront() {
       <div class="cover-rule"></div>
       <div class="cover-year">2021-2026</div>
     </div>
-    <div class="cover-open-hint">Nhấn để mở →</div>
+    <div class="cover-open-hint" aria-hidden="true">
+      <span class="cover-open-dot"></span>
+      <span class="cover-open-text">Click để mở album</span>
+    </div>
   </div>`;
 }
 
