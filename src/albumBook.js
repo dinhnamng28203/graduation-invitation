@@ -59,13 +59,18 @@ function renderCoverBack() {
 
 function renderFull(data) {
   const hasCaption = Boolean(data.caption || data.sub);
+  const noteText = data.note
+    ? String(data.note)
+        .replace(/<br\s*\/?>/gi, "\n")
+        .trim()
+    : "";
   return `<div class="layout-full">
     <div class="full-photo-frame">
       <div class="full-photo-content">
         <img src="${data.src}" alt="${data.caption || "Ảnh album"}" loading="eager" decoding="async" fetchpriority="high" onerror="this.parentElement.innerHTML='<div class=\\'img-placeholder\\'>📷<span>Thêm ảnh vào đây</span></div>'">
       </div>
     </div>
-    ${data.note ? `<div class="page-note">${data.note}</div>` : ""}
+    ${noteText ? `<div class="page-note">${noteText}</div>` : ""}
     ${
       hasCaption
         ? `<div class="caption-bar">

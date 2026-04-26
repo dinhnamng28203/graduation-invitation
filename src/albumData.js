@@ -18,12 +18,12 @@ export const PAGES = [
     left: {
       layout: "full",
       src: "/anh 2.jpg",
-      note: "Mấy con zời đi Hà Giang đường núi tối om may mắn về lành lặn về nhà. Giờ nhớ lại vẫn thấy hãi",
+      note: "Mấy con zời đi Hà Giang đường núi tối om may mắn về lành lặn về nhà.\nGiờ nhớ lại vẫn thấy hãi",
     },
     right: {
       layout: "full",
       src: "/anh 3.jpg",
-      note: "Mặt t ít nhọ nồi nhất nha mất ní",
+      note: "Mặt t ít nhọ nồi nhất nha mấy ní",
     },
   },
   {

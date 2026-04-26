@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400&family=Pinyon+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400&family=Playfair+Display:wght@500;600;700&family=Pinyon+Script&display=swap");
 
 *,
 *::before,
@@ -171,10 +171,27 @@ body {
   color: var(--cream);
 }
 
+.cover-eyebrow {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  font-weight: 500;
+}
+
 .cover-main-title {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 30px;
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.18;
+  letter-spacing: 0.3px;
   text-align: center;
+}
+
+.cover-year {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
 }
 
 .cover-subtitle {
@@ -261,7 +278,7 @@ body {
 
 .full-photo-frame {
   position: absolute;
-  inset: 56px 36px 36px;
+  inset: 72px 36px 36px;
   border: 3px solid #fff;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.14);
   background: #f2ecdf;
@@ -296,12 +313,18 @@ body {
   position: absolute;
   top: 14px;
   left: 14px;
-  max-width: 60%;
+  display: inline-block;
+  width: fit-content;
+  max-width: calc(100% - 28px);
   padding: 6px 10px;
   border-radius: 6px;
   background: rgba(250, 245, 238, 0.85);
   color: var(--text-main);
+  font-family: "Be Vietnam Pro", sans-serif;
   font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  white-space: pre-line;
   line-height: 1.35;
 }
 
