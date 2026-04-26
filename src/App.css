@@ -25,7 +25,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   font-family: "DM Sans", sans-serif;
   background: radial-gradient(ellipse at 20% 50%, rgba(122, 92, 58, 0.3) 0%, transparent 60%),
     radial-gradient(ellipse at 80% 50%, rgba(61, 37, 16, 0.4) 0%, transparent 60%), #1a1008;
